@@ -6,9 +6,10 @@ body {
   margin: auto;
 }
 .move {
-  background-image: url("../image.jpeg");
+  background: url("../image.jpeg") no-repeat center center;
+  overflow: auto;
+  position: fixed;
   border-style: solid;
-  background-size: contain;
   height: 100vh;
   color: azure;
 }
