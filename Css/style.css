@@ -1,15 +1,23 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 body {
-  padding: auto;
-  margin: auto;
+    padding: auto;
+    margin: auto;
 }
+
 .move {
-  background: url("../image.jpeg") no-repeat center center;
-  overflow: auto;
-  position: fixed;
-  border-style: solid;
-  height: 100vh;
-  color: azure;
+    background: url("../image.jpeg");
+    border-style: solid;
+    color: azure;
+}
+
+.titles {
+    text-align: center;
+    font-family: 'Zen Dots';
+}
+
+.slide-content {
+    text-align: center;
 }
