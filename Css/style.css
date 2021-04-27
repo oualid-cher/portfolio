@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: auto;
+  margin: auto;
+}
+.move {
+  background-image: url("../image.jpeg");
+  border-style: solid;
+  background-size: contain;
+  height: 100vh;
+  color: azure;
+}
