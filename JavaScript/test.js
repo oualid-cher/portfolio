@@ -131,5 +131,3 @@ class World {
       }
     world.mouseMove(mousePos);
   }
-  // slider part
-  
