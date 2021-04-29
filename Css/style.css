@@ -6,6 +6,7 @@ body {
   color: #fff;
   margin: 0;
   padding: 0;
+  background-attachment: fixed;
 }
 canvas {
   display: block;
@@ -68,7 +69,6 @@ body {
   width: 100%;
   height: 100vh;
 }
-
 .slides .slide {
   color: white;
   width: 100%;
@@ -86,4 +86,113 @@ body {
 }
 .slick-dots li {
   display: block;
+}
+
+.slide-content {
+  height: 50vh;
+  width: 50%;
+  font-size: large;
+  position: relative;
+  box-shadow: 0rem 0rem 2rem 0 rgba(180, 110, 19, 0.3);
+  background: inherit;
+  cursor: default;
+}
+
+.slide-content:before {
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.178);
+  filter: blur(10px);
+}
+
+.slide-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border-style: dotted;
+  border-color: aqua; */
+  height: 40%;
+}
+
+.slide-title {
+  font-family: "Josefin Sans";
+  text-shadow: 2px 2px rgb(184, 57, 35);
+  text-transform: uppercase;
+  text-align: center;
+  /* border: dotted blue; */
+  font-size: 150%;
+}
+
+.slide-subtitle {
+  font-size: 120%;
+  text-align: center;
+  text-align: center;
+  /* border: dotted blue; */
+  text-decoration: none;
+}
+
+.slide-subtitle:after {
+  bottom: 0;
+  content: "";
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.slide-subtitle:hover:after {
+  width: 100%;
+}
+
+.slide-text {
+  font-family: "Josefin Sans";
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+  /* border-style: dotted; */
+}
+.slick-dots {
+  /* buttons list */
+  height: 80vh;
+  /* border: dotted dodgerblue; */
+}
+.slick-dots li button {
+  /* button of navbar */
+  height: 20vh;
+  background-color: #000;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  bottom: 10vh;
+}
+
+.slick-dots li button span:hover {
+  background-color: tomato;
+  background-image: linear-gradient(180deg, red, yellow);
+}
+
+.slick-dots li button span {
+  /* button text */
+  /* display: inline-block; */
+  color: white;
+  font-size: 10px;
+  writing-mode: vertical-rl;
+  height: 18vh;
+  text-orientation: upright;
+}
+
+.slick-active.slick-active button {
+  border: dotted whitesmoke;
+}
+
+.slick-active.slick-active button span {
+  font-size: 12px;
+  font-weight: bold;
 }

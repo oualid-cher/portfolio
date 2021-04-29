@@ -14,27 +14,47 @@
         <!--   <div class="intro">hello</div> -->
           <div class='slides'>
             <div class="slide">
-              <span>Ahmed Oualid Cherkaoui</span>
+              <span class="slide-content"> 
+				  <div class="slide-header">
+					  <h1 class="slide-title" id="text-to-anime"></h1>
+					  <h2 class="slide-subtitle">FULL STACK <br> DEVELOPER</h2>
+					</div>
+				<p class="slide-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro incidunt cupiditate eius labore eos quas hic deleniti. Rati</p>
+			  </span>
             </div>
             <div class="slide">
-              <span>about</span>
+              <span class="slide-content">
+				  <div class="slide-header">
+					  <h1 class="slide-title" id="text-to-anime2"></h1>
+				  </div>
+				<p class="slide-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro incidunt cupiditate eius labore eos quas hic deleniti. Rati</p>
+			  </span>
             </div>
             <div class="slide">
-              <span>Projects</span>
+              <span class="slide-content">
+				  <div class="slide-header">
+					  <h1 class="slide-title" id="text-to-anime3"></h1>
+				  </div>
+				  <p class="slide-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro incidunt cupiditate eius labore eos quas hic deleniti. Rati</p>
+			  </span>
             </div>
             <div class="slide">
-              <span>contact</span>
-            </div>
-            <div class="slide">
-              <span>5</span>
-            </div>
-            <div class="slide">
-              <span>6</span>
+              <span class="slide-content">
+				  <div class="slide-header">
+					  <h1 class="slide-title" id="text-to-anime4">contact</h1>
+				  </div>
+				<p class="slide-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro incidunt cupiditate eius labore eos quas hic deleniti. Rati</p>
+			  </span>
             </div>
           </div>
         </div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+
+<script src="./JavaScript/writingStyle.js"></script>
+
 <script>
 	 function debounce(func, wait, immediate) {
         var timeout;
@@ -60,9 +80,8 @@
           Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
     
         console.log("wheel scroll ", e.deltaX, e.deltaY, direction);
-    
         if (direction > 0) {
-          // next slide
+			// next slide
           slick_instance.slick("slickNext");
         } else {
           // prev slide
@@ -74,13 +93,15 @@
     // debounce the wheel event handling since trackpads can have a lot of inertia
     var slick_handle_wheel_event_debounced = debounce( 
       slick_handle_wheel_event
-      , 60, true
+      , 100, true
     );
     
     // init slider 
     const slick_2 = $(".slides");
     slick_2.slick({
       dots: true,
+	  infinite: false,
+	  appendDots: '.slides',
       vertical: true,
       verticalSwiping: true,
       arrows: false
@@ -101,6 +122,17 @@
       slick_handle_wheel_event_debounced(e.originalEvent, slick_2, slick_2_is_animating);  
     });
 </script>
+
+<script>
+	let element = document.querySelectorAll(".slick-dots li button");
+	let tab = ['<span>HOME</span>', '<span>ABOUT</span>', '<span>PROJECTS</span>', '<span>CONTACT</span>']
+	let i = 0;
+	for (let key1 of element) {
+		key1.innerHTML = tab[i];
+		i++;
+	}
+</script>
+
 <script type="x-shader/x-fragment" id="fragmentShader">
 	precision highp float;
 
@@ -260,6 +292,6 @@
 	}
 </script>
 <script src="./JavaScript/three.js"></script>
-<script src="./JavaScript/test.js"></script>
+<script src="./JavaScript/script.js"></script>
 </body>
 </html>
