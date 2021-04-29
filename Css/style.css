@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300");
 
+*{
+  outline: none;
+}
+
 body {
   overflow: hidden;
   background-color: #000;
@@ -147,7 +151,7 @@ body {
   width: 0;
 }
 
-.slide-subtitle:hover:after {
+.slide-content:hover .slide-header > .slide-subtitle:after {
   width: 100%;
 }
 
