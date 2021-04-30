@@ -104,6 +104,8 @@ body {
     font-size: 2vh;
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     box-shadow: 0rem 0rem 2rem 0 rgba(180, 110, 19, 0.3);
     background: inherit;
