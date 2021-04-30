@@ -1,231 +1,238 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300");
-
 * {
-  outline: none;
+    outline: none;
 }
 
 body {
-  overflow: hidden;
-  background-color: #000;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-  background-attachment: fixed;
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
 }
+
 canvas {
-  display: block;
+    display: block;
 }
 
 .about {
-  position: absolute;
-  color: #fff;
-  width: 400px;
-  font-size: 14px;
-  font-family: "Josefin Sans";
-  text-transform: uppercase;
-  text-align: right;
-  letter-spacing: 3px;
-  line-height: 1.5;
-  top: 50%;
-  left: calc(50% - 200px);
-  transform: translate(-50%, -50%);
-  user-select: none;
-  cursor: default;
+    position: absolute;
+    color: #fff;
+    width: 400px;
+    font-size: 14px;
+    font-family: "Josefin Sans";
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    top: 50%;
+    left: calc(50% - 200px);
+    transform: translate(-50%, -50%);
+    user-select: none;
+    cursor: default;
 }
 
 .world {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  background: #000;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #000;
 }
 
 html,
 body {
-  height: 100vh;
-  overflow-x: hidden;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
 .intro {
-  height: 100vh;
-  width: 100%;
-  background: #999;
+    height: 100vh;
+    width: 100%;
+    background: #999;
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  height: 100vh;
-  color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100vh;
+    color: white;
 }
 
 .slick-track,
 .slick-list {
-  height: 100vh;
+    height: 100vh;
 }
 
 .slick-dotted.slick-slider {
-  margin: 0;
+    margin: 0;
 }
 
 .slides {
-  width: 100%;
-  height: 100vh;
+    width: 100%;
+    height: 100vh;
 }
+
 .slides .slide {
-  color: white;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2vh;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vh;
 }
+
 .slick-dots {
-  position: absolute;
-  bottom: 5vw;
-  left: 2vh;
-  text-align: left;
+    position: absolute;
+    bottom: 5vw;
+    left: 2vh;
+    text-align: left;
 }
+
 .slick-dots li {
-  display: block;
+    display: block;
 }
 
 .slide-content {
-  height: 50vh;
-  width: 50%;
-  font-size: 2vh;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0rem 0rem 2rem 0 rgba(180, 110, 19, 0.3);
-  background: inherit;
-  cursor: default;
+    height: 50vh;
+    width: 50%;
+    font-size: 2vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0rem 0rem 2rem 0 rgba(180, 110, 19, 0.3);
+    background: inherit;
+    cursor: default;
 }
 
 .slide-content:before {
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.178);
-  filter: blur(10px);
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.178);
+    filter: blur(10px);
 }
 
 .slide-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* border-style: dotted;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border-style: dotted;
   border-color: aqua; */
-  height: 40%;
+    height: 40%;
 }
 
 .slide-title {
-  font-family: "Josefin Sans";
-  text-shadow: 2px 2px rgb(184, 57, 35);
-  text-transform: uppercase;
-  text-align: center;
-  /* border: dotted blue; */
-  font-size: 150%;
+    font-family: "Josefin Sans";
+    text-shadow: 2px 2px rgb(184, 57, 35);
+    text-transform: uppercase;
+    text-align: center;
+    /* border: dotted blue; */
+    font-size: 150%;
+    height: 3vh;
 }
 
 .slide-subtitle {
-  font-size: 2vh;
-  text-align: center;
-  text-align: center;
-  /* border: dotted blue; */
-  text-decoration: none;
+    font-size: 2vh;
+    text-align: center;
+    text-align: center;
+    /* border: dotted blue; */
+    text-decoration: none;
 }
 
 .slide-subtitle:after {
-  bottom: 0;
-  content: "";
-  display: flex;
-  align-items: center;
-  position: relative;
-  height: 2px;
-  background: #fff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
+    bottom: 0;
+    content: "";
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
 }
 
-.slide-content:hover .slide-header > .slide-subtitle:after {
-  width: 100%;
+.slide-content:hover .slide-header>.slide-subtitle:after {
+    width: 100%;
 }
 
 .slide-text {
-  font-family: "Josefin Sans";
-  font-size: 2vh;
-  text-align: center;
-  width: 88%;
-  height: 40vh;
-  padding: 5%;
-  /* border-style: dotted; */
+    font-family: "Josefin Sans";
+    font-size: 2vh;
+    text-align: center;
+    width: 88%;
+    height: 40vh;
+    padding: 5%;
+    /* border-style: dotted; */
 }
+
 .slick-dots {
-  /* buttons list */
-  height: 80vh;
-  top: 10vh;
-  /* border: dotted dodgerblue; */
+    /* buttons list */
+    height: 80vh;
+    top: 10vh;
+    /* border: dotted dodgerblue; */
 }
+
 .slick-dots li button {
-  /* button of navbar */
-  height: 20vh;
-  background-color: rgb(187, 20, 20);
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  width: 78%;
+    /* button of navbar */
+    height: 20vh;
+    background-color: rgb(187, 20, 20);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 78%;
 }
 
 .slick-dots li button:hover {
-  background-color: rgba(21, 216, 241, 0.733);
+    background-color: rgba(21, 216, 241, 0.733);
 }
+
 .slick-dots.slick-active.slick-active li button:hover {
-  background-image: none;
-  background-color: black !important;
+    background-image: none;
+    background-color: black !important;
 }
 
 .slick-dots li button span {
-  /* button text */
-  /* display: inline-block; */
-  color: white;
-  font-size: 1.8vmin;
-  writing-mode: vertical-rl;
-  height: 100%;
-  width: 100%;
-  text-orientation: upright;
+    /* button text */
+    /* display: inline-block; */
+    color: white;
+    font-size: 1.8vmin;
+    writing-mode: vertical-rl;
+    height: 100%;
+    width: 100%;
+    text-orientation: upright;
 }
 
 .slick-active.slick-active button {
-  width: 78%;
-  text-decoration: none;
-  background-color: #000;
+    width: 78%;
+    text-decoration: none;
+    background-color: #000;
 }
 
 .slick-active.slick-active.slick-active button span {
-  text-align: center;
-  font-weight: 1000;
-  font-size: 2.2vmin;
-  /* border: dotted rgb(187, 20, 20); */
-  position: relative;
-  left: 20%;
+    text-align: center;
+    font-weight: 1000;
+    font-size: 2.2vmin;
+    /* border: dotted rgb(187, 20, 20); */
+    position: relative;
+    left: 20%;
 }
 
 .splide {
-  border: dotted white;
-  color: #fff;
-  height: 30vh;
+    border: dotted white;
+    color: #fff;
+    height: 30vh;
 }
 
 .splide__arrow {
-  color: white !important;
-  background-color: aqua !important;
-  border: dotted white;
+    color: white !important;
+    background-color: aqua !important;
+    border: dotted white;
 }
