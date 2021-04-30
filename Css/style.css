@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300");
 
-*{
+* {
   outline: none;
 }
 
@@ -80,12 +80,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 80px;
+  font-size: 2vh;
 }
 .slick-dots {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  bottom: 5vw;
+  left: 2vh;
   text-align: left;
 }
 .slick-dots li {
@@ -95,7 +95,7 @@ body {
 .slide-content {
   height: 50vh;
   width: 50%;
-  font-size: large;
+  font-size: 2vh;
   position: relative;
   box-shadow: 0rem 0rem 2rem 0 rgba(180, 110, 19, 0.3);
   background: inherit;
@@ -132,7 +132,7 @@ body {
 }
 
 .slide-subtitle {
-  font-size: 120%;
+  font-size: 2vh;
   text-align: center;
   text-align: center;
   /* border: dotted blue; */
@@ -157,7 +157,7 @@ body {
 
 .slide-text {
   font-family: "Josefin Sans";
-  font-size: 40px;
+  font-size: 2vh;
   text-align: center;
   width: 100%;
   /* border-style: dotted; */
@@ -165,6 +165,7 @@ body {
 .slick-dots {
   /* buttons list */
   height: 80vh;
+  top: 10vh;
   /* border: dotted dodgerblue; */
 }
 .slick-dots li button {
@@ -172,6 +173,9 @@ body {
   height: 20vh;
   background-color: #000;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   cursor: pointer;
   bottom: 10vh;
@@ -186,17 +190,18 @@ body {
   /* button text */
   /* display: inline-block; */
   color: white;
-  font-size: 10px;
+  font-size: 1.5vmin;
   writing-mode: vertical-rl;
-  height: 12vh;
+  height: 100%;
   text-orientation: upright;
 }
 
 .slick-active.slick-active button {
   border: dotted whitesmoke;
+  overflow: hidden;
 }
 
 .slick-active.slick-active button span {
-  font-size: 12px;
+  font-size: 2vmin;
   font-weight: bold;
 }
