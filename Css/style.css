@@ -184,10 +184,9 @@ body {
     background-color: rgb(187, 20, 20);
     border-radius: 10vh;
     /* border: dotted 1px yellow; */
-    border: none;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
+    border: none !important;
+    display: flex !important;
+    justify-content: center !important;
     width: 3vmin;
 }
 
@@ -220,5 +219,5 @@ body {
     font-weight: 1000;
     font-size: 2.2vmin;
     /* border: dotted rgb(187, 20, 20); */
-    position: absolute;
+    position: absolute !important;
 }
