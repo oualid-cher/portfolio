@@ -1,6 +1,5 @@
 // function([string1, string2],target id,[color1,color2])    
 consoleText(['AHMED OUALID CHERKAOUI'], 'text-to-anime',['white']);
-consoleText(['ABOUT'], 'text-to-anime2',['white']);
 consoleText(['PROJECTS'], 'text-to-anime3',['white']);
 consoleText(['CONTACT'], 'text-to-anime4',['white']);
 

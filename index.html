@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css">
     <link rel="stylesheet" href="./Css/style.css">
     <title>Document</title>
 </head>
@@ -19,15 +20,11 @@
 					  <h1 class="slide-title" id="text-to-anime"></h1>
 					  <h2 class="slide-subtitle">FULL STACK <br> DEVELOPER</h2>
 					</div>
-				<p class="slide-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro incidunt cupiditate eius labore eos quas hic deleniti. Rati</p>
-			  </span>
-            </div>
-            <div class="slide">
-              <span class="slide-content">
-				  <div class="slide-header">
-					  <h1 class="slide-title" id="text-to-anime2"></h1>
-				  </div>
-				<p class="slide-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro incidunt cupiditate eius labore eos quas hic deleniti. Rati</p>
+				<p class="slide-text">After two years at 1337 coding school/42 Network, I am currently looking for an opportunity to taste the code in the real world as a web/mobile developer intern.
+
+					I am flexible with web/mobile development tools, My main strength is my ability
+					
+					to adapt to any project besides being a problem solver and a good debugger.</p>
 			  </span>
             </div>
             <div class="slide">
@@ -35,7 +32,8 @@
 				  <div class="slide-header">
 					  <h1 class="slide-title" id="text-to-anime3"></h1>
 				  </div>
-				  <p class="slide-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro incidunt cupiditate eius labore eos quas hic deleniti. Rati</p>
+				  <div class="slide-text">
+				  </div>
 			  </span>
             </div>
             <div class="slide">
@@ -53,7 +51,18 @@
 
 <script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+
 <script src="./JavaScript/writingStyle.js"></script>
+
+<script>
+	new Splide('.splide', {
+	type   : 'loop',
+	pagination : false,
+	arrows : '.slides',
+	'arrowPath' : 'M21 24l-18-12 18-12v24zm-16.197-12l15.197 10.132v-20.263l-15.197 10.131'
+}).mount();
+</script>
 
 <script>
 	 function debounce(func, wait, immediate) {
@@ -125,7 +134,7 @@
 
 <script>
 	let element = document.querySelectorAll(".slick-dots li button");
-	let tab = ['<span>HOME</span>', '<span>ABOUT</span>', '<span>PROJECTS</span>', '<span>CONTACT</span>']
+	let tab = ['<span>HOME</span>', '<span>PROJECTS</span>', '<span>CONTACT</span>']
 	let i = 0;
 	for (let key1 of element) {
 		key1.innerHTML = tab[i];
