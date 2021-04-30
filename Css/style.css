@@ -136,16 +136,17 @@ body {
     font-family: "Josefin Sans";
     text-shadow: 2px 2px rgb(184, 57, 35);
     text-transform: uppercase;
-    position: relative;
-    top: 2vmin;
     text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
     /* border: dotted blue; */
-    font-size: 2.5vmin;
+    font-size: 3vmin;
     height: 10vh;
 }
 
 .slide-subtitle {
-    font-size: 2vh;
+    font-size: 2.5vmin;
     text-align: center;
     text-align: center;
     /* border: dotted blue; */
@@ -170,7 +171,7 @@ body {
 
 .slide-text {
     font-family: "Josefin Sans";
-    font-size: 2vh;
+    font-size: 2.5vmin;
     text-align: center;
     width: 88%;
     height: 40vh;
