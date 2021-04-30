@@ -140,7 +140,7 @@ body {
     align-items: center;
     align-content: center;
     /* border: dotted blue; */
-    font-size: 3.5vh;
+    font-size: 2.5vh;
     height: 10vh;
 }
 
@@ -170,7 +170,7 @@ body {
 
 .slide-text {
     font-family: "Josefin Sans";
-    font-size: 2.5vmin;
+    font-size: 3vmin;
     text-align: center;
     width: 88%;
     height: 40vh;
