@@ -172,7 +172,7 @@ body {
     font-family: "Josefin Sans";
     font-size: 3vmin;
     text-align: center;
-    width: 88%;
+    width: 50vw;
     height: 40vh;
     padding: 5%;
     /* border-style: dotted; */
@@ -244,4 +244,55 @@ body {
 .glider-prev:focus,
 .glider-next:focus {
     color: tomato;
+}
+
+.dots {
+    /* border: dotted yellow; */
+    color: white;
+}
+
+.glider-slide {
+    min-width: 0;
+    width: 50vw !important;
+    height: 40vh !important;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.glider-contain {
+    /* border: dotted blue; */
+    width: 50vw !important;
+    height: 40vh !important;
+    display: flex;
+    align-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.glider {
+    /* border: dotted tomato; */
+    height: 39vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.glider-dot {
+    width: 1vw;
+    height: 1vh;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-self: flex-end;
+}
+
+.slide-text.glider-contain {
+    padding: 0;
+}
+
+.glider-prev,
+.glider-next {
+    top: 16vh;
 }
