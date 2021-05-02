@@ -153,12 +153,14 @@
                     prev: '.glider-prev',
                     next: '.glider-next'
                 },
-                dots: '.dots'
+                dots: false,
+                scrollLock: true,
+                scrollLockDelay: 100,
             })
         })
     </script>
 
-  <script type="x-shader/x-fragment" id="fragmentShader">
+<script type="x-shader/x-fragment" id="fragmentShader">
 	precision highp float;
 
 	varying vec2 vUv;
