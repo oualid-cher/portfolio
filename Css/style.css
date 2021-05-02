@@ -235,7 +235,7 @@ body {
 .glider-next.disabled,
 .glider-prev.disabled {
     opacity: .25;
-    color: black;
+    color: black !important;
     cursor: default;
 }
 
@@ -244,11 +244,6 @@ body {
 .glider-prev:focus,
 .glider-next:focus {
     color: tomato;
-}
-
-.dots {
-    /* border: dotted yellow; */
-    color: white;
 }
 
 .glider-slide {
@@ -279,15 +274,6 @@ body {
     text-align: center;
 }
 
-.glider-dot {
-    width: 1vw;
-    height: 1vh;
-    border-radius: 50%;
-    overflow: hidden;
-    display: flex;
-    align-self: flex-end;
-}
-
 .slide-text.glider-contain {
     padding: 0;
 }
@@ -295,8 +281,24 @@ body {
 .glider-prev,
 .glider-next {
     top: 16vh;
+    height: 5vh;
+    width: 5vw;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: rgb(158, 153, 153);
+    animation: next-prev 1.5s ease 0.3s infinite alternate;
+}
+
+@keyframes next-prev {
+    0% {color: rgb(187, 20, 20);}
+    100% {color: rgb(44, 43, 41);}
 }
 
 .project-title {
     font-size: 2.5vmin;
 }
+
+/* ******************** .project-title animation  */
+
