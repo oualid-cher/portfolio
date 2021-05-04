@@ -323,9 +323,34 @@ body {
 }
 
 .icon {
-    height: 15vh;
+    height: 15vh !important;
     border-radius: 5px;
     color: rgba(18, 116, 228, 0.693);
+    font-size: 5vh;
 }
 
-.icon .server-icon {}
+.server-icon {
+    width: 15vw;
+    height: 15vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.icon-container {
+    height: 15vh;
+    width: 15vw;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sql-icon {
+    height: 6vh;
+    margin-top: 1vh;
+    margin-left: 0.5vw;
+    width: 6vh;
+}

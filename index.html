@@ -67,19 +67,29 @@
                                   Roger-Skyline/ Networking
                               </h1>
 							  <p class="project-desc">Create and configure a  Web Server in a VM / System and Network administration.</p>
-							  <i class="fas fa-server icon server-icon"></i>
+							  <div class="icon">
+
+								  <i class="fas fa-server server-icon"></i>
+							  </div>
                             </div>
 						  <div class="project-slide">
                               <h1 class="project-title">
 
                                   Fillit/ C language
                               </h1>
+							  <p class="project-desc">Solve a Tetris Game using  Backtracking.</p>
+							  <img src="./c-1.png" alt="c logo" class="icon">
                             </div>
 						  <div class="project-slide">
                               <h1 class="project-title">
 
                                   PHP Pool
                               </h1>
+							  <p class="project-desc">Web basics (HTML, CSS, JS, SQL)</p>
+							  <div class="icon-container">
+								  <img src="./languages-icon.png" alt="HTML CSS JS logo" class="sub-icon">
+								  <img src="./png-clipart-microsoft-sql-server-microsoft-azure-sql-database-microsoft-text-logo-thumbnail.png" alt="SQL logo" class="sub-icon sql-icon">
+							  </div>
                             </div>
 					</div>
 					<div aria-label="Previous" class="glider-prev"> < </div>
@@ -189,6 +199,8 @@
     <script>
         window.addEventListener('load', function() {
             new Glider(document.querySelector('.glider'), {
+                slidesToShow: 1,
+                slidesToScroll: 1,
                 arrows: {
                     prev: '.glider-prev',
                     next: '.glider-next'
@@ -200,7 +212,7 @@
         })
     </script>
 
-    <!-- <script type="x-shader/x-fragment" id="fragmentShader">
+    <script type="x-shader/x-fragment" id="fragmentShader">
 	precision highp float;
 
 	varying vec2 vUv;
@@ -357,7 +369,7 @@
 	
 		gl_Position = projectionMatrix * modelViewMatrix * vec4 ( finalPos, 1.0);
 	}
-</script> -->
+</script>
     <script src="./JavaScript/three.js"></script>
     <script src="./JavaScript/script.js"></script>
 </body>
