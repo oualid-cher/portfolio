@@ -322,6 +322,8 @@ body {
     align-content: center;
     align-items: center;
     justify-content: space-around;
+    padding: 0 1vw;
+    line-height: 2.5vh;
 }
 
 .icon {
