@@ -323,7 +323,7 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 0 1vw;
-    line-height: 2.5vh;
+    line-height: 1.5;
 }
 
 .icon {
