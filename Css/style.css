@@ -349,8 +349,8 @@ body {
 }
 
 .sql-icon {
-    height: 6vh;
     margin-top: 1vh;
+    width: 100%;
     margin-left: 0.5vw;
-    width: 6vh;
+    width: 5vw;
 }
