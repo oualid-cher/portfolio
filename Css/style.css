@@ -303,7 +303,7 @@ body {
 .project-slide {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -317,9 +317,11 @@ body {
 .project-desc {
     font-size: 2vmin;
     height: 30vh;
+    width: 30vw;
     display: flex;
     align-content: center;
     align-items: center;
+    justify-content: space-around;
 }
 
 .icon {
@@ -351,6 +353,5 @@ body {
 .sql-icon {
     margin-top: 0.5em;
     margin-left: 0.5vw;
-    /* align-self: center; */
     width: 5vw;
 }
