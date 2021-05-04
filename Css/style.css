@@ -172,11 +172,14 @@ body {
     font-family: "Josefin Sans";
     font-size: 3vmin;
     text-align: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
     width: 50vw;
     height: 40vh;
     padding: 5%;
     line-height: 1.5;
-    /* border-style: dotted; */
 }
 
 .slick-dots {
@@ -359,4 +362,44 @@ body {
     margin-top: 0.3em;
     margin-left: 0.2em;
     height: 4vh;
+}
+
+.sm-icon-container {
+    height: 30vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.s-icon {
+    font-size: 8vh;
+    height: 10vh;
+    width: 10vh;
+    border: solid 2px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.github {
+    color: #fff;
+    background-color: black;
+    border-color: #fff;
+}
+
+.linkedin {
+    background-color: #0077b5;
+    border-color: #0077b5;
+}
+
+.gmail {
+    background-color: #EA4335;
+}
+.s-icon a {
+    text-decoration: none;
+    color: #fff;
 }
