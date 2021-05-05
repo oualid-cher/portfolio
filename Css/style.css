@@ -365,35 +365,46 @@ body {
 }
 
 .sm-icon-container {
-    height: 30vh;
-    width: 30vw;
-    display: flex;
+    height: 40vh;
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw;
+    grid-gap: 3vw;
+    justify-content: center;
     align-items: center;
+    /* i m here */
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
     align-content: center;
-    justify-content: space-between;
+    align-items: center;
+    /* justify-content: center; */
+    /* background-color: rgba(180, 110, 19, 0.3); */
 }
 
 .s-icon {
-    font-size: 5vh;
-    height: 10vh;
-    width: 10vh;
-    border: solid 2px;
-    border-radius: 50px;
+    font-size: 5vw;
+    height: 8vw;
+    width: 8vw;
+    border-radius: 50vh;
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
+    box-shadow: 1vw 1.5vw 5vw rgba(190, 191, 197, 0.5);
 }
 
 .github {
     color: #fff;
     background-color: black;
     border-color: #fff;
+    font-size: 8vw;
 }
 
 .linkedin {
     background-color: #0077b5;
-    border-color: #0077b5;
 }
 
 .gmail {
@@ -402,4 +413,79 @@ body {
 .s-icon a {
     text-decoration: none;
     color: #fff;
+}
+
+.sm-name {
+    font-size: 2vh;
+    line-height: 1;
+    width: 12vw;
+    height: 5vh;
+    padding: 0.7vh;
+    border-radius: 25px;
+    position: relative;
+    top: 0;
+    box-shadow: -5px 5px 10px rgba(211, 213, 228, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    /* top: -1vh; */
+    /* background-color: blue; */
+}
+
+.sm-name:before {
+    position: absolute;
+    width: 1vw;
+    height: 1vw;
+    content: "";
+    background: rgb(71, 47, 47);
+    bottom: -0.5vw;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.link.sm-name::before {
+    background: #0077b5;
+}
+
+.git.sm-name::before {
+    background: #fff;
+}
+
+.gm.sm-name::before {
+    background: #EA4335;
+}
+
+.contact-container:hover .sm-name {
+    opacity: 1;
+    pointer-events: auto;
+    top: -1em;
+}
+
+.contact-container .s-icon:hover .contact-container .sm-name {
+    opacity: 1;
+}
+
+.git {
+    background-color: #fff;
+    color: black;
+}
+
+.link {
+    background-color: #0077b5;
+}
+
+.gm {
+    background-color: #EA4335;
+}
+
+#pop-up {
+    position: absolute;
+    top: 40vh;
+    width: 45vw;
+    left: 2vw;
+    background-color: #d3d3d348;
+    border-radius: 10vh;
+    padding: 0 2vw;
+    text-align: center;
+    display: none;
 }

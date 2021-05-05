@@ -108,16 +108,25 @@
 				  </div>
 				<div class="slide-text">
 					<div class="sm-icon-container">
-						<div class="s-icon github">
-
-							<a class="fab fa-github" href="https://github.com/oualid-cher" target="_blank"></a>
+						<div class="contact-container">
+							<div class="sm-name git">oualid-cher</div>
+							<div class="s-icon github">
+								<a class="fab fa-github" href="https://github.com/oualid-cher" target="_blank"></a>
+							</div>
 						</div>
-						<div class="s-icon linkedin">
-
-							<a class="fab fa-linkedin-in" href="https://www.linkedin.com/in/ahmed-oualid-cherkaoui-41516b210/" target="_blank"></a>
+						<div class="contact-container">
+							<div class="sm-name link">ahmed oualid cherkaoui</div>
+							<div class="s-icon linkedin">
+								<a class="fab fa-linkedin-in" href="https://www.linkedin.com/in/ahmed-oualid-cherkaoui-41516b210/" target="_blank"></a>
+							</div>
 						</div>
-						<div class="s-icon gmail">
-							<a class="fab fa-google"></a>
+						<div class="contact-container">
+							<div class="sm-name gm">Click To Copy Mail Adress</div>
+							<div class="hidden-mail" hidden>ahmedoualidcherkaoui@gmail.com</div>
+							<div class="s-icon gmail">
+								<a class="fab fa-google" onclick="copyToClipboard('.hidden-mail'); openPopUp()"></a>
+							</div>
+							<span id="pop-up">Mail Adress Copied To Clipboard</span>
 						</div>
 					</div>
 				</div>
@@ -205,7 +214,7 @@
 
     <script>
         let element = document.querySelectorAll(".slick-dots li button");
-        let tab = ['<span>HOME</span>', '<span>PROJECTS</span>', '<span>CONTACT</span>']
+        let tab = ['<span>ABOUT ME</span>', '<span>PROJECTS</span>', '<span>CONTACT</span>']
         let i = 0;
         for (let key1 of element) {
             key1.innerHTML = tab[i];
@@ -224,10 +233,27 @@
                 },
                 dots: false,
                 scrollLock: true,
-                scrollLockDelay: 50,
+                scrollLockDelay: 25,
             })
         })
     </script>
+
+	<script>
+		function copyToClipboard(element) {
+ 		 var $temp = $("<input>");
+ 	 	$("body").append($temp);
+ 	 	$temp.val($(element).text()).select();
+ 	 	document.execCommand("copy");
+ 		 $temp.remove();
+		}
+	</script>
+
+	<script>
+		function openPopUp() {
+  		document.getElementById("pop-up").style.display = "block";
+		  setTimeout(() => {  document.getElementById("pop-up").style.display = "none"; }, 2000);
+}
+	</script>
 
     <script type="x-shader/x-fragment" id="fragmentShader">
 	precision highp float;
